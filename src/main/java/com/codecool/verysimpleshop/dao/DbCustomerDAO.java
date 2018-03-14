@@ -21,7 +21,7 @@ public class DbCustomerDAO extends DbHelper implements CustomerDAO {
     public List<Customer> getBySearchPhrase(String searchPhrase) {
 
         String sqlStatement = customerStatement.selectBySearchPhrase();
-        PreparedStatement statement = psc.getPreparedStatementBy(Collections.nCopies(5, "%" + searchPhrase + "%"),
+        PreparedStatement statement = psc.getPreparedStatementBy(Collections.nCopies(4, "%" + searchPhrase + "%"),
                 sqlStatement);
 
         List<Customer> customers = new ArrayList<>();
