@@ -28,4 +28,8 @@ public class RootView {
             }
         }
     }
+
+    public void displayMessageToUseQuotes() {
+        System.out.println("Use double quote if your search phrase is more than single word");
+    }
 }

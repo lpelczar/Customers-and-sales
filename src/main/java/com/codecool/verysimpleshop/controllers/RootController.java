@@ -23,6 +23,9 @@ public class RootController {
         if (this.consoleArgs.length == 0) {
             rootView.displayNoConsoleArgsError();
             return;
+        } else if (this.consoleArgs.length > 1) {
+            rootView.displayMessageToUseQuotes();
+            return;
         }
 
         List<Customer> customers = new ArrayList<>(customerDAO.getBySearchPhrase(consoleArgs[0]));

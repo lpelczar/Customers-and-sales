@@ -8,6 +8,6 @@ public class CustomerStatement {
                 "OR name LIKE ? " +
                 "OR surname LIKE ? " +
                 "OR birthyear LIKE ? " +
-                "OR gender LIKE ?;";
+                "OR gender LIKE ? COLLATE NOCASE;";
     }
 }
