@@ -18,7 +18,11 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "ID: " + id + " Name: " + name + " Surname: " + surname + " Birthyear: " + birthYear +
-                " Gender: " + gender;
+        return getClass().getSimpleName() + " ID: " + id + " Name: " + name + " Surname: " + surname + " Birthyear: "
+                + birthYear + " Gender: " + gender;
+    }
+
+    public int getId() {
+        return id;
     }
 }
