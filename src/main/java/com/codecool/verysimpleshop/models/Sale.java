@@ -3,14 +3,14 @@ package com.codecool.verysimpleshop.models;
 public class Sale {
 
     private int id;
-    private int customerId;
+    private Customer customer;
     private String productName;
     private double netValue;
     private int taxRate;
 
-    public Sale(int id, int customerId, String productName, double netValue, int taxRate) {
+    public Sale(int id, Customer customer, String productName, double netValue, int taxRate) {
         this.id = id;
-        this.customerId = customerId;
+        this.customer = customer;
         this.productName = productName;
         this.netValue = netValue;
         this.taxRate = taxRate;
@@ -18,7 +18,7 @@ public class Sale {
 
     @Override
     public String toString() {
-        return "ID: " + id + " Customer id: " + customerId + " Product name: " + productName +
-        " Net value: " + netValue + " Tax rate: " + taxRate;
+        return getClass().getSimpleName() + " ID: " + id + " Customer id: " + customer.getId() + " Product name: " +
+                productName + " Net value: " + netValue + " Tax rate: " + taxRate;
     }
 }
