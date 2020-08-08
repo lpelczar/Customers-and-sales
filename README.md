@@ -4,8 +4,6 @@
 
 Create an SQLite database based on given ERD diagram. 
 
-![c1](http://i65.tinypic.com/ay299t.png)
-
 Save database creation script to create_db.sql file. Remember that *.sql files may contain only SQL queries and comments.
 
 Fill your database with data from given .csv files: customers.csvWyświetl podgląd dokumentu, sales.csv Save insertion script to insert_sample_data.sql file.
